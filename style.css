@@ -1,0 +1,42 @@
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100px;
+    width: 300px;
+}
+
+.switch{
+    position:absolute;
+    border: 1px solid black;
+    height: 100px;
+    width: 200px;
+    cursor: pointer;
+    background-color: #ccc;
+    border-radius: 100px;
+    transition: .4s;
+    margin: 0;
+}
+.slider{
+    position: relative;
+    border: 1px solid black;
+    background-color: white;
+    display: inline-block;
+    height: 90px;
+    width: 90px;
+    border-radius: 100px;
+    margin-left: 2px;
+    margin-top: 3px;
+    transform:translateX(0);
+    transition: transform .4s;
+}
+
+.slider:after{
+    transform:translateX(50px);
+}
+
+
+
+input{
+    display: none;
+}
